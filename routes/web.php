@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/kna-world', function () {
+    return view('kna-world');
+});
+
+Route::get('/ventanilla-facil', function () {
+    return view('ventanilla-facil');
+});
+
+Route::get('/about', function () {
+    return view('about');
 });
