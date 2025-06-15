@@ -4,9 +4,11 @@
     @extends('layouts.navbar')
     <div class="container">
         <div class="row pt-5">
-            <div class="col-6">
-                <img src="{{ asset('img/monitor.png') }}" id="pc" alt="">
-                {{-- <span>Bienvenido :)</span> --}}
+            <div class="col-6 position-relative">
+                <img src="{{ asset('img/monitor.png') }}" class="laptop-img" alt="">
+                <div class="screen-pc d-flex">
+                    <span class="text-center mx-auto my-auto">Bienvenido :)</span>
+                </div>
             </div>
             <div class="col-6 ps-3 align-content-center text-center">
                 <h1>Hola! Mi nombre es Evelyn 🐣</h1>
@@ -42,9 +44,11 @@
 @section('english')
     <div class="container">
         <div class="row pt-5">
-            <div class="col-6">
+            <div class="col-6 position-relative">
                 <img src="{{ asset('img/monitor.png') }}" id="pc" alt="">
-                {{-- <span>Bienvenido :)</span> --}}
+                <div class="screen-pc d-flex">
+                    <span class="text-center mx-auto my-auto">Welcome :)</span>
+                </div>
             </div>
             <div class="col-6 ps-3 align-content-center text-center">
                 <h1>Hi! I'm Evelyn 🐣</h1>

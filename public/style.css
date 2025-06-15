@@ -128,7 +128,37 @@ h1.title{
       scrollbar-width: none;
     }
 
+    .screen-pc {
+      position: absolute;
+      top: 7.5%;
+      left: 6.8%;
+      width: 86.3%;
+      height: 71.5%;
+      overflow: auto;
+      border-radius: 0px;
+      scrollbar-width: none;
+    }
+
     a{
         text-decoration: none;
         height: fit-content;
     }
+
+    span{
+        display: block;
+        font-family: monospace;
+        font-size: 2.5vw;
+        white-space: nowrap;
+        border-right: 2px solid;
+        width: 13ch;
+        animation: typing 2s steps(14), blink .5s infinite step-end alternate;
+        overflow: hidden;
+    }
+
+   @keyframes typing {
+     from { width: 0 }
+   }
+
+   @keyframes blink {
+     50% { border-color: transparent; }
+   }
